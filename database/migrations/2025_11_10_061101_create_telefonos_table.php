@@ -18,7 +18,7 @@ return new class extends Migration
             $table->decimal('precio', 10, 2);
             $table->integer('stock')->default(0);
             $table->text('descripcion')->nullable();
-            $table->string('imagen', 200)->nullable();
+            $table->string('imagen')->nullable();
         });
     }
 
