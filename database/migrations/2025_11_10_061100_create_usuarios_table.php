@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password', 255);
             $table->string('direccion', 200)->nullable();
             $table->string('telefono', 20)->nullable();
+            $table->rememberToken();    
             $table->timestamp('fecha_registro')->useCurrent();
         });
     }
